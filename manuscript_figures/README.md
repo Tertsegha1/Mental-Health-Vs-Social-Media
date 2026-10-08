@@ -6,17 +6,20 @@ These are the figures of the manuscript *Digital wellbeing in the social media e
 
 **Datasets.**
 - *Emotional pathway:* the same Twitter corpus as this repository's notebook (*Depression: Twitter Dataset + Feature Extraction*, Kaggle).
-- *Behavioural pathway:* the *Digital Habits vs. Mental Health* dataset (Kaggle, synthetic). This is not the *Social Media vs Productivity* dataset used in the notebook.
+- *Behavioural pathway:* two synthetic datasets.
+  - *Digital Habits vs. Mental Health* (Kaggle).
+  - This repository's *Social Media vs Productivity* dataset, re-analysed with the same leakage-free pipeline. With stress at 6 or more, behaviour does not predict stress (random forest AUC 0.506). Stress in this dataset is essentially independent of every behaviour.
 
 | File | Manuscript (Scientific Reports version) |
 |---|---|
 | `fig1_pipeline.png` | Fig. 1, analytical workflow |
-| `fig2_behaviour_kde.png` | Fig. 2, screen time and sleep by stress group |
+| `fig2_behaviour_kde_both.png` | Fig. 2, behavioural distributions by stress group in both synthetic datasets |
 | `fig_language_composite.png` | Fig. 3, word clouds and PCA emotional landscape |
 | `fig_sentiment.png` | Fig. 4, VADER sentiment by group |
-| `fig3_validation.png` | Fig. 5, effect of evaluation design (tweet-level vs user-grouped) |
-| `fig_behaviour_3d.png` | Supplementary Fig. S1, three-dimensional behaviour space |
+| `fig3_validation.png` | Fig. 5, effect of evaluation design and dataset (language and both behavioural datasets) |
+| `fig_behaviour_3d.png` | Supplementary Fig. S1, three-dimensional behaviour space (Digital Habits) |
 | `fig4_confusion.png` | Supplementary Fig. S2, confusion matrices |
 | `fig_topic_bubble.png` | Supplementary Fig. S3, LDA topics |
+| `fig_productivity_kde.png` | IEEE versions: Social Media vs Productivity distributions |
 
 To regenerate the figures, follow the instructions in the enhanced repository's README.
